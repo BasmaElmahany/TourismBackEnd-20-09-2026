@@ -1,0 +1,71 @@
+﻿using MediatR;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Tourism.Application.Common.DTOs;
+using Tourism.Application.Features.Authentication.DTOs;
+using Tourism.Application.Features.Tourguide.Create;
+using Tourism.Application.Features.Tourguide.Delete;
+using Tourism.Application.Features.Tourguide.GetAll;
+using Tourism.Application.Features.Tourguide.GetById;
+using Tourism.Application.Features.Tourguide.Update;
+
+namespace Tourism.API.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class TourGuidesController : ControllerBase
+    {
+        private readonly ISender _sender;
+
+        public TourGuidesController(ISender sender)
+        {
+            _sender = sender;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<ApiResponse<List<TourGuideDto>>>> GetAll(CancellationToken cancellationToken)
+        {
+            var response = await _sender.Send(new GetAllTourGuidesQuery(), cancellationToken);
+            return StatusCode(response.Code, response);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ApiResponse<TourGuideDto>>> GetById(string id, CancellationToken cancellationToken)
+        {
+            var response = await _sender.Send(new GetTourGuideByIdQuery(id), cancellationToken);
+            return StatusCode(response.Code, response);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<ApiResponse<TourGuideDto>>> Create([FromBody] CreateTourGuideCommand command, CancellationToken cancellationToken)
+        {
+            var response = await _sender.Send(command, cancellationToken);
+            return StatusCode(response.Code, response);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<ApiResponse<bool>>> Update(string id, [FromBody] UpdateTourGuideCommand command, CancellationToken cancellationToken)
+        {
+            if (id != command.Id)
+            {
+                return BadRequest(new ApiResponse<bool>
+                {
+                    Success = false,
+                    Data = false,
+                    Message = "معرف المسار لا يطابق معرف الطلب",
+                    Code = StatusCodes.Status400BadRequest
+                });
+            }
+
+            var response = await _sender.Send(command, cancellationToken);
+            return StatusCode(response.Code, response);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<ApiResponse<bool>>> Delete(string id, CancellationToken cancellationToken)
+        {
+            var response = await _sender.Send(new DeleteTourGuideCommand(id), cancellationToken);
+            return StatusCode(response.Code, response);
+        }
+    }
+}
