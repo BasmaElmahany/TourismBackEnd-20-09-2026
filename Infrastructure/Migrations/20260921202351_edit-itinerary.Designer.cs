@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Tourism.Infrastructure.Persistence;
 
@@ -11,9 +12,11 @@ using Tourism.Infrastructure.Persistence;
 namespace Tourism.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260921202351_edit-itinerary")]
+    partial class edititinerary
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -424,7 +427,25 @@ namespace Tourism.Infrastructure.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("BestTime")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Category")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Difficulty")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Duration")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Excludes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GroupSize")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Highlights")
@@ -441,6 +462,12 @@ namespace Tourism.Infrastructure.Migrations
                         .HasColumnType("bit")
                         .HasDefaultValue(false);
 
+                    b.Property<string>("Price")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Itineraries");
@@ -454,16 +481,25 @@ namespace Tourism.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Accommodation")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Activities")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("Day")
                         .HasColumnType("int");
 
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ItineraryId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Meals")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -895,28 +931,48 @@ namespace Tourism.Infrastructure.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("ContactInfo")
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ImageUrl")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsFree")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
+                        .HasColumnType("bit");
 
                     b.Property<double?>("Latitude")
                         .HasColumnType("float");
 
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<double?>("Longitude")
                         .HasColumnType("float");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Organizer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("TicketPrice")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -1383,193 +1439,6 @@ namespace Tourism.Infrastructure.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Tourism.Domain.Entities.Itinerary", b =>
-                {
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "BestTime", b1 =>
-                        {
-                            b1.Property<string>("ItineraryId")
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("ItineraryId");
-
-                            b1.ToTable("Itineraries");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ItineraryId");
-                        });
-
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Category", b1 =>
-                        {
-                            b1.Property<string>("ItineraryId")
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("ItineraryId");
-
-                            b1.ToTable("Itineraries");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ItineraryId");
-                        });
-
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Description", b1 =>
-                        {
-                            b1.Property<string>("ItineraryId")
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("ItineraryId");
-
-                            b1.ToTable("Itineraries");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ItineraryId");
-                        });
-
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Difficulty", b1 =>
-                        {
-                            b1.Property<string>("ItineraryId")
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("ItineraryId");
-
-                            b1.ToTable("Itineraries");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ItineraryId");
-                        });
-
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Duration", b1 =>
-                        {
-                            b1.Property<string>("ItineraryId")
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("ItineraryId");
-
-                            b1.ToTable("Itineraries");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ItineraryId");
-                        });
-
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "GroupSize", b1 =>
-                        {
-                            b1.Property<string>("ItineraryId")
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("ItineraryId");
-
-                            b1.ToTable("Itineraries");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ItineraryId");
-                        });
-
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Price", b1 =>
-                        {
-                            b1.Property<string>("ItineraryId")
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("ItineraryId");
-
-                            b1.ToTable("Itineraries");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ItineraryId");
-                        });
-
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Title", b1 =>
-                        {
-                            b1.Property<string>("ItineraryId")
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("ItineraryId");
-
-                            b1.ToTable("Itineraries");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ItineraryId");
-                        });
-
-                    b.Navigation("BestTime");
-
-                    b.Navigation("Category");
-
-                    b.Navigation("Description");
-
-                    b.Navigation("Difficulty");
-
-                    b.Navigation("Duration");
-
-                    b.Navigation("GroupSize");
-
-                    b.Navigation("Price");
-
-                    b.Navigation("Title");
-                });
-
             modelBuilder.Entity("Tourism.Domain.Entities.ItineraryDay", b =>
                 {
                     b.HasOne("Tourism.Domain.Entities.Itinerary", "Itinerary")
@@ -1577,76 +1446,7 @@ namespace Tourism.Infrastructure.Migrations
                         .HasForeignKey("ItineraryId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Accommodation", b1 =>
-                        {
-                            b1.Property<int>("ItineraryDayId")
-                                .HasColumnType("int");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("ItineraryDayId");
-
-                            b1.ToTable("ItineraryDays");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ItineraryDayId");
-                        });
-
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Description", b1 =>
-                        {
-                            b1.Property<int>("ItineraryDayId")
-                                .HasColumnType("int");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("ItineraryDayId");
-
-                            b1.ToTable("ItineraryDays");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ItineraryDayId");
-                        });
-
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Title", b1 =>
-                        {
-                            b1.Property<int>("ItineraryDayId")
-                                .HasColumnType("int");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("ItineraryDayId");
-
-                            b1.ToTable("ItineraryDays");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ItineraryDayId");
-                        });
-
-                    b.Navigation("Accommodation");
-
-                    b.Navigation("Description");
-
                     b.Navigation("Itinerary");
-
-                    b.Navigation("Title");
                 });
 
             modelBuilder.Entity("Tourism.Domain.Entities.Photographer", b =>
@@ -2000,143 +1800,31 @@ namespace Tourism.Infrastructure.Migrations
 
             modelBuilder.Entity("Tourism.Domain.Entities.TourismEvent", b =>
                 {
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Category", b1 =>
+                    b.OwnsOne("Tourism.Domain.Entities.EventContactInfo", "ContactInfo", b1 =>
                         {
                             b1.Property<string>("TourismEventId")
                                 .HasColumnType("nvarchar(450)");
 
-                            b1.Property<string>("Ar")
-                                .IsRequired()
+                            b1.Property<string>("Email")
                                 .HasColumnType("nvarchar(max)");
 
-                            b1.Property<string>("En")
-                                .IsRequired()
+                            b1.Property<string>("Phone")
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.Property<string>("Website")
                                 .HasColumnType("nvarchar(max)");
 
                             b1.HasKey("TourismEventId");
 
                             b1.ToTable("Events");
 
-                            b1.WithOwner()
-                                .HasForeignKey("TourismEventId");
-                        });
-
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Description", b1 =>
-                        {
-                            b1.Property<string>("TourismEventId")
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("TourismEventId");
-
-                            b1.ToTable("Events");
+                            b1.ToJson("ContactInfo");
 
                             b1.WithOwner()
                                 .HasForeignKey("TourismEventId");
                         });
 
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Location", b1 =>
-                        {
-                            b1.Property<string>("TourismEventId")
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("TourismEventId");
-
-                            b1.ToTable("Events");
-
-                            b1.WithOwner()
-                                .HasForeignKey("TourismEventId");
-                        });
-
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Name", b1 =>
-                        {
-                            b1.Property<string>("TourismEventId")
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("TourismEventId");
-
-                            b1.ToTable("Events");
-
-                            b1.WithOwner()
-                                .HasForeignKey("TourismEventId");
-                        });
-
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "Organizer", b1 =>
-                        {
-                            b1.Property<string>("TourismEventId")
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("TourismEventId");
-
-                            b1.ToTable("Events");
-
-                            b1.WithOwner()
-                                .HasForeignKey("TourismEventId");
-                        });
-
-                    b.OwnsOne("Tourism.Domain.Entities.Common.LocalizedText", "TicketPrice", b1 =>
-                        {
-                            b1.Property<string>("TourismEventId")
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.Property<string>("Ar")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("En")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("TourismEventId");
-
-                            b1.ToTable("Events");
-
-                            b1.WithOwner()
-                                .HasForeignKey("TourismEventId");
-                        });
-
-                    b.Navigation("Category");
-
-                    b.Navigation("Description");
-
-                    b.Navigation("Location");
-
-                    b.Navigation("Name");
-
-                    b.Navigation("Organizer");
-
-                    b.Navigation("TicketPrice");
+                    b.Navigation("ContactInfo");
                 });
 
             modelBuilder.Entity("Tourism.Domain.Entities.TourismInfo", b =>
