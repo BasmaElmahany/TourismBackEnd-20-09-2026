@@ -3,60 +3,14 @@
   "WorkspaceRootPath": "E:\\TourismBackEnd\\AmlqkEldwla_Dewan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2BC7D4E-B4D5-4DA6-A265-BA635AAADA25}|Tourism.API.csproj|e:\\tourismbackend\\amlqkeldwla_dewan\\controllers\\souvenirscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BC7D4E-B4D5-4DA6-A265-BA635AAADA25}|Tourism.API.csproj|solutionrelative:controllers\\souvenirscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\souvenir\\bulkcreate\\bulkcreatesouvenirshopscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\souvenir\\bulkcreate\\bulkcreatesouvenirshopscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\souvenir\\delete\\deletesouvenirshopcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\souvenir\\delete\\deletesouvenirshopcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\souvenir\\update\\updatesouvenirshopcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\souvenir\\update\\updatesouvenirshopcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\souvenir\\create\\createsouvenirshopcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\souvenir\\create\\createsouvenirshopcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\souvenir\\deletesouvenirproduct\\deletesouvenirproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\souvenir\\deletesouvenirproduct\\deletesouvenirproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\souvenir\\createsouvenirproduct\\createsouvenirproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\souvenir\\createsouvenirproduct\\createsouvenirproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\blogposts\\update\\updateblogpostcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2BC7D4E-B4D5-4DA6-A265-BA635AAADA25}|Tourism.API.csproj|e:\\tourismbackend\\amlqkeldwla_dewan\\controllers\\blogpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BC7D4E-B4D5-4DA6-A265-BA635AAADA25}|Tourism.API.csproj|solutionrelative:controllers\\blogpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\blogposts\\bulkcreate\\bulkcreateblogpostscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\blogposts\\bulkcreate\\bulkcreateblogpostscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\blogposts\\delete\\deleteblogpostcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\blogposts\\update\\updateblogpostcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\blogposts\\update\\updateblogpostcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -78,206 +32,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BulkCreateSouvenirShopsCommandHandler.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\BulkCreate\\BulkCreateSouvenirShopsCommandHandler.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\BulkCreate\\BulkCreateSouvenirShopsCommandHandler.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\BulkCreate\\BulkCreateSouvenirShopsCommandHandler.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\BulkCreate\\BulkCreateSouvenirShopsCommandHandler.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAAGIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:06:19.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BulkCreateSouvenirShopsCommand.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\BulkCreate\\BulkCreateSouvenirShopsCommand.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\BulkCreate\\BulkCreateSouvenirShopsCommand.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\BulkCreate\\BulkCreateSouvenirShopsCommand.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\BulkCreate\\BulkCreateSouvenirShopsCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:06:04.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SouvenirsController.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\AmlqkEldwla_Dewan\\Controllers\\SouvenirsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SouvenirsController.cs",
-              "ToolTip": "E:\\TourismBackEnd\\AmlqkEldwla_Dewan\\Controllers\\SouvenirsController.cs",
-              "RelativeToolTip": "Controllers\\SouvenirsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:02:12.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateSouvenirShopCommand.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\Create\\CreateSouvenirShopCommand.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\Create\\CreateSouvenirShopCommand.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\Create\\CreateSouvenirShopCommand.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\Create\\CreateSouvenirShopCommand.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAACkAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:00:10.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateSouvenirShopCommandHandler.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\Create\\CreateSouvenirShopCommandHandler.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\Create\\CreateSouvenirShopCommandHandler.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\Create\\CreateSouvenirShopCommandHandler.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\Create\\CreateSouvenirShopCommandHandler.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAIQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:00:40.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateSouvenirShopCommand.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\Update\\UpdateSouvenirShopCommand.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\Update\\UpdateSouvenirShopCommand.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\Update\\UpdateSouvenirShopCommand.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\Update\\UpdateSouvenirShopCommand.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAqwCkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:01:07.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateSouvenirShopCommandHandler.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\Update\\UpdateSouvenirShopCommandHandler.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\Update\\UpdateSouvenirShopCommandHandler.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\Update\\UpdateSouvenirShopCommandHandler.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\Update\\UpdateSouvenirShopCommandHandler.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAAAHkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:01:12.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DeleteSouvenirShopCommand.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\Delete\\DeleteSouvenirShopCommand.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\Delete\\DeleteSouvenirShopCommand.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\Delete\\DeleteSouvenirShopCommand.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\Delete\\DeleteSouvenirShopCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:01:25.433Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DeleteSouvenirShopCommandHandler.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\Delete\\DeleteSouvenirShopCommandHandler.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\Delete\\DeleteSouvenirShopCommandHandler.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\Delete\\DeleteSouvenirShopCommandHandler.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\Delete\\DeleteSouvenirShopCommandHandler.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAADwv1IAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:01:30.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DeleteSouvenirProductCommandHandler.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\DeleteSouvenirProduct\\DeleteSouvenirProductCommandHandler.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\DeleteSouvenirProduct\\DeleteSouvenirProductCommandHandler.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\DeleteSouvenirProduct\\DeleteSouvenirProductCommandHandler.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\DeleteSouvenirProduct\\DeleteSouvenirProductCommandHandler.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAowEAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:01:47.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DeleteSouvenirProductCommand.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\DeleteSouvenirProduct\\DeleteSouvenirProductCommand.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\DeleteSouvenirProduct\\DeleteSouvenirProductCommand.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\DeleteSouvenirProduct\\DeleteSouvenirProductCommand.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\DeleteSouvenirProduct\\DeleteSouvenirProductCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:01:39.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateSouvenirProductCommandHandler.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommandHandler.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommandHandler.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommandHandler.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommandHandler.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:00:55.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CreateSouvenirProductCommand.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommand.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommand.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommand.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T13:00:47.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "BulkCreateBlogPostsCommandHandler.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\BlogPosts\\BulkCreate\\BulkCreateBlogPostsCommandHandler.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\BlogPosts\\BulkCreate\\BulkCreateBlogPostsCommandHandler.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\BlogPosts\\BulkCreate\\BulkCreateBlogPostsCommandHandler.cs",
-              "RelativeToolTip": "..\\Application\\Features\\BlogPosts\\BulkCreate\\BulkCreateBlogPostsCommandHandler.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T12:55:36.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "BulkCreateBlogPostsCommand.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\BlogPosts\\BulkCreate\\BulkCreateBlogPostsCommand.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\BlogPosts\\BulkCreate\\BulkCreateBlogPostsCommand.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\BlogPosts\\BulkCreate\\BulkCreateBlogPostsCommand.cs",
-              "RelativeToolTip": "..\\Application\\Features\\BlogPosts\\BulkCreate\\BulkCreateBlogPostsCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T12:55:20.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "BlogPostsController.cs",
               "DocumentMoniker": "E:\\TourismBackEnd\\AmlqkEldwla_Dewan\\Controllers\\BlogPostsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BlogPostsController.cs",
@@ -285,12 +44,11 @@
               "RelativeToolTip": "Controllers\\BlogPostsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T12:47:41.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-17T12:47:41.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 0,
               "Title": "UpdateBlogPostCommandHandler.cs",
               "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\BlogPosts\\Update\\UpdateBlogPostCommandHandler.cs",
               "RelativeDocumentMoniker": "..\\Application\\Features\\BlogPosts\\Update\\UpdateBlogPostCommandHandler.cs",
@@ -303,7 +61,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 3,
               "Title": "UpdateBlogPostCommand.cs",
               "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\BlogPosts\\Update\\UpdateBlogPostCommand.cs",
               "RelativeDocumentMoniker": "..\\Application\\Features\\BlogPosts\\Update\\UpdateBlogPostCommand.cs",
@@ -311,12 +69,11 @@
               "RelativeToolTip": "..\\Application\\Features\\BlogPosts\\Update\\UpdateBlogPostCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T12:47:01.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-17T12:47:01.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 2,
               "Title": "DeleteBlogPostCommandHandler.cs",
               "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\BlogPosts\\Delete\\DeleteBlogPostCommandHandler.cs",
               "RelativeDocumentMoniker": "..\\Application\\Features\\BlogPosts\\Delete\\DeleteBlogPostCommandHandler.cs",
@@ -324,12 +81,11 @@
               "RelativeToolTip": "..\\Application\\Features\\BlogPosts\\Delete\\DeleteBlogPostCommandHandler.cs",
               "ViewState": "AgIAACQAAAAAAAAAAADwv0gAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T12:46:53.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-17T12:46:53.327Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 6,
               "Title": "DeleteBlogPostCommand.cs",
               "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\BlogPosts\\Delete\\DeleteBlogPostCommand.cs",
               "RelativeDocumentMoniker": "..\\Application\\Features\\BlogPosts\\Delete\\DeleteBlogPostCommand.cs",
@@ -337,12 +93,11 @@
               "RelativeToolTip": "..\\Application\\Features\\BlogPosts\\Delete\\DeleteBlogPostCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T12:46:46.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-17T12:46:46.814Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 4,
               "Title": "CreateBlogPostCommandHandler.cs",
               "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\BlogPosts\\Create\\CreateBlogPostCommandHandler.cs",
               "RelativeDocumentMoniker": "..\\Application\\Features\\BlogPosts\\Create\\CreateBlogPostCommandHandler.cs",
@@ -350,12 +105,11 @@
               "RelativeToolTip": "..\\Application\\Features\\BlogPosts\\Create\\CreateBlogPostCommandHandler.cs",
               "ViewState": "AgIAADsAAAAAAAAAAADwv18AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T12:46:15.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-17T12:46:15.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 5,
               "Title": "CreateBlogPostCommand.cs",
               "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\BlogPosts\\Create\\CreateBlogPostCommand.cs",
               "RelativeDocumentMoniker": "..\\Application\\Features\\BlogPosts\\Create\\CreateBlogPostCommand.cs",
@@ -363,8 +117,7 @@
               "RelativeToolTip": "..\\Application\\Features\\BlogPosts\\Create\\CreateBlogPostCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T12:46:04.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-17T12:46:04.039Z"
             }
           ]
         }

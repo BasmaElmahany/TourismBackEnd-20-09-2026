@@ -1,9 +1,5 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 using Tourism.Application.Common.DTOs;
 using Tourism.Application.Features.Authentication.DTOs;
 using Tourism.Application.Features.Souvenir.BulkCreate;
