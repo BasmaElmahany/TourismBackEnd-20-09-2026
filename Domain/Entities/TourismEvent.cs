@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tourism.Domain.Entities.Common;
 
 namespace Tourism.Domain.Entities
 {
@@ -12,21 +13,21 @@ namespace Tourism.Domain.Entities
         [Key]
         public string Id { get; set; } = Guid.NewGuid().ToString();
 
-        public string Name { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
+        public LocalizedText? Name { get; set; } 
+        public LocalizedText? Description { get; set; } 
         public string ImageUrl { get; set; } = string.Empty;
 
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public string Location { get; set; } = string.Empty;
+        public LocalizedText? Location { get; set; } 
 
         public double? Latitude { get; set; }
         public double? Longitude { get; set; }
 
-        public string TicketPrice { get; set; } = string.Empty;
+        public LocalizedText? TicketPrice { get; set; } 
         public bool IsFree { get; set; }
-        public string Category { get; set; } = string.Empty;
-        public string Organizer { get; set; } = string.Empty;
+        public LocalizedText? Category { get; set; } 
+        public LocalizedText? Organizer { get; set; }
 
         public EventContactInfo? ContactInfo { get; set; }
     }

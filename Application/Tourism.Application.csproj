@@ -8,6 +8,12 @@
 
   <ItemGroup>
     <Folder Include="Features\Authentication\Validators\" />
+    <Folder Include="Features\Events\Delete\" />
+    <Folder Include="Features\Events\Update\" />
+    <Folder Include="Features\Itinerary\Create\" />
+    <Folder Include="Features\Itinerary\GetById\" />
+    <Folder Include="Features\Itinerary\Delete\" />
+    <Folder Include="Features\Itinerary\update\" />
   </ItemGroup>
 
   <ItemGroup>
