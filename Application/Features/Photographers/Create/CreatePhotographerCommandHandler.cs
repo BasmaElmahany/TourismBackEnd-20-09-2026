@@ -1,15 +1,11 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Tourism.Application.Common.DTOs;
 using Tourism.Application.Features.Authentication.DTOs;
+using Tourism.Application.Interfaces;
 using Tourism.Application.IUnitofwork;
-using Tourism.Domain.Entities.Common;
 using Tourism.Domain.Entities;
+using Tourism.Domain.Entities.Common;
 
 namespace Tourism.Application.Features.Photographers.Create
 {
@@ -17,10 +13,12 @@ namespace Tourism.Application.Features.Photographers.Create
         : IRequestHandler<CreatePhotographerCommand, ApiResponse<PhotographerDto>>
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IFileStorageService _fileStorage;
 
-        public CreatePhotographerCommandHandler(IUnitOfWork unitOfWork)
+        public CreatePhotographerCommandHandler(IUnitOfWork unitOfWork, IFileStorageService fileStorage)
         {
             _unitOfWork = unitOfWork;
+            _fileStorage = fileStorage;
         }
 
         public async Task<ApiResponse<PhotographerDto>> Handle(
@@ -29,13 +27,20 @@ namespace Tourism.Application.Features.Photographers.Create
         {
             try
             {
+                // حفظ صورة المصور
+                string imageUrl = string.Empty;
+                if (request.ImageFile != null)
+                {
+                    imageUrl = await _fileStorage.SaveFileAsync(request.ImageFile, "photographers", cancellationToken);
+                }
+
                 var entity = new Photographer
                 {
                     Id = Guid.NewGuid().ToString(),
                     Name = new LocalizedText { En = request.Name.En, Ar = request.Name.Ar },
                     Bio = request.Bio is null ? null : new LocalizedText { En = request.Bio.En, Ar = request.Bio.Ar },
                     Specialties = request.Specialties,
-                    ImageUrl = request.ImageUrl,
+                    ImageUrl = imageUrl,
                     Phone = request.Phone is null ? null : new LocalizedText { En = request.Phone.En, Ar = request.Phone.Ar },
                     Email = request.Email is null ? null : new LocalizedText { En = request.Email.En, Ar = request.Email.Ar },
                     Social = request.Social is null ? null : new SocialLinks
@@ -80,7 +85,7 @@ namespace Tourism.Application.Features.Photographers.Create
                 {
                     Success = true,
                     Data = dto,
-                    Message = "تم إضافة المصور بنجاح",
+                    Message = "تم إضافة المصور وحفظ الصورة بنجاح",
                     Code = StatusCodes.Status201Created
                 };
             }

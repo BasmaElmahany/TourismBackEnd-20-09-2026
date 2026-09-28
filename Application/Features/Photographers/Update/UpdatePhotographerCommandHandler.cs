@@ -1,11 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Tourism.Application.Common.DTOs;
+using Tourism.Application.Interfaces;
 using Tourism.Application.IUnitofwork;
 using Tourism.Domain.Entities.Common;
 
@@ -15,10 +11,12 @@ namespace Tourism.Application.Features.Photographers.Update
          : IRequestHandler<UpdatePhotographerCommand, ApiResponse<bool>>
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IFileStorageService _fileStorage;
 
-        public UpdatePhotographerCommandHandler(IUnitOfWork unitOfWork)
+        public UpdatePhotographerCommandHandler(IUnitOfWork unitOfWork, IFileStorageService fileStorage)
         {
             _unitOfWork = unitOfWork;
+            _fileStorage = fileStorage;
         }
 
         public async Task<ApiResponse<bool>> Handle(
@@ -40,10 +38,25 @@ namespace Tourism.Application.Features.Photographers.Update
                     };
                 }
 
+                // Handle image update
+                if (request.ImageFile != null && request.ImageFile.Length > 0)
+                {
+                    // Clean up previous file if it was locally hosted
+                    if (!string.IsNullOrWhiteSpace(entity.ImageUrl) && entity.ImageUrl.StartsWith("/assets/images/"))
+                    {
+                        _fileStorage.DeleteFile(entity.ImageUrl);
+                    }
+
+                    entity.ImageUrl = await _fileStorage.SaveFileAsync(request.ImageFile, "photographers", cancellationToken);
+                }
+                else if (!string.IsNullOrWhiteSpace(request.ExistingImageUrl))
+                {
+                    entity.ImageUrl = request.ExistingImageUrl;
+                }
+
                 entity.Name = new LocalizedText { En = request.Name.En, Ar = request.Name.Ar };
                 entity.Bio = request.Bio is null ? null : new LocalizedText { En = request.Bio.En, Ar = request.Bio.Ar };
                 entity.Specialties = request.Specialties;
-                entity.ImageUrl = request.ImageUrl;
                 entity.Phone = request.Phone is null ? null : new LocalizedText { En = request.Phone.En, Ar = request.Phone.Ar };
                 entity.Email = request.Email is null ? null : new LocalizedText { En = request.Email.En, Ar = request.Email.Ar };
                 entity.Social = request.Social is null ? null : new SocialLinks
@@ -77,13 +90,13 @@ namespace Tourism.Application.Features.Photographers.Update
                     Code = StatusCodes.Status200OK
                 };
             }
-            catch
+            catch (Exception ex)
             {
                 return new ApiResponse<bool>
                 {
                     Success = false,
                     Data = false,
-                    Message = "حدث خطأ أثناء تعديل بيانات المصور",
+                    Message = $"حدث خطأ أثناء تعديل بيانات المصور: {ex.Message}",
                     Code = StatusCodes.Status500InternalServerError
                 };
             }

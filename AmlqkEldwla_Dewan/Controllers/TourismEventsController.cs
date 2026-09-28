@@ -27,30 +27,30 @@ namespace Tourism.API.Controllers
             return StatusCode(response.Code, response);
         }
 
-        [HttpPost]
-        [Consumes("multipart/form-data")]
-        public async Task<ActionResult<ApiResponse<string>>> Create(
-            [FromForm] string eventDataJson,
-            [FromForm] IFormFile? image,
-            CancellationToken cancellationToken)
-        {
-            var eventDto = JsonSerializer.Deserialize<CreateTourismEventDto>(
-                eventDataJson,
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }
-            );
+        //[HttpPost]
+        //[Consumes("multipart/form-data")]
+        //public async Task<ActionResult<ApiResponse<string>>> Create(
+        //    [FromForm] string eventDataJson,
+        //    [FromForm] IFormFile? image,
+        //    CancellationToken cancellationToken)
+        //{
+        //    var eventDto = JsonSerializer.Deserialize<CreateTourismEventDto>(
+        //        eventDataJson,
+        //        new JsonSerializerOptions { PropertyNameCaseInsensitive = true }
+        //    );
 
-            if (eventDto == null)
-            {
-                return BadRequest(new ApiResponse<string>
-                {
-                    Success = false,
-                    Message = "بيانات الفعالية غير صالحة",
-                    Code = StatusCodes.Status400BadRequest
-                });
-            }
+        //    if (eventDto == null)
+        //    {
+        //        return BadRequest(new ApiResponse<string>
+        //        {
+        //            Success = false,
+        //            Message = "بيانات الفعالية غير صالحة",
+        //            Code = StatusCodes.Status400BadRequest
+        //        });
+        //    }
 
-            var response = await _sender.Send(new CreateTourismEventCommand(eventDto, image), cancellationToken);
-            return StatusCode(response.Code, response);
-        }
+        //    var response = await _sender.Send(new CreateTourismEventCommand(eventDto, image), cancellationToken);
+        //    return StatusCode(response.Code, response);
+        //}
     }
 }

@@ -1,30 +1,35 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\AmlqkEldwla_Dewan\\",
+  "WorkspaceRootPath": "D:\\TourismBackEnd-20-09-2026\\AmlqkEldwla_Dewan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Infrastructure\\Migrations\\20260921221902_event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|d:\\tourismbackend-20-09-2026\\application\\features\\photographers\\create\\createphotographercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{015009DC-3E24-483D-9966-C4DF7E8A2240}|..\\Infrastructure\\Tourism.Infrastructure.csproj|d:\\tourism\\tourismbackend\\tourismbackend-20-09-2026\\infrastructure\\persistence\\configurations\\tourismeventconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D828E0AA-7AB4-4340-9D4C-4DCCF1B44DC7}|..\\Domain\\Tourism.Domain.csproj|d:\\tourismbackend-20-09-2026\\domain\\entities\\photographer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{015009DC-3E24-483D-9966-C4DF7E8A2240}|..\\Infrastructure\\Tourism.Infrastructure.csproj|d:\\tourism\\tourismbackend\\tourismbackend-20-09-2026\\infrastructure\\persistence\\configurations\\tourisminfoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|d:\\tourismbackend-20-09-2026\\application\\features\\photographers\\create\\createphotographercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{015009DC-3E24-483D-9966-C4DF7E8A2240}|..\\Infrastructure\\Tourism.Infrastructure.csproj|d:\\tourism\\tourismbackend\\tourismbackend-20-09-2026\\infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|d:\\tourismbackend-20-09-2026\\application\\features\\photographers\\update\\updatephotographercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D828E0AA-7AB4-4340-9D4C-4DCCF1B44DC7}|..\\Domain\\Tourism.Domain.csproj|d:\\tourism\\tourismbackend\\tourismbackend-20-09-2026\\domain\\entities\\eventcontactinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2BC7D4E-B4D5-4DA6-A265-BA635AAADA25}|Tourism.API.csproj|d:\\tourismbackend-20-09-2026\\amlqkeldwla_dewan\\controllers\\photographerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BC7D4E-B4D5-4DA6-A265-BA635AAADA25}|Tourism.API.csproj|solutionrelative:controllers\\photographerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D828E0AA-7AB4-4340-9D4C-4DCCF1B44DC7}|..\\Domain\\Tourism.Domain.csproj|d:\\tourism\\tourismbackend\\tourismbackend-20-09-2026\\domain\\entities\\tourismevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2BC7D4E-B4D5-4DA6-A265-BA635AAADA25}|Tourism.API.csproj|d:\\tourismbackend-20-09-2026\\amlqkeldwla_dewan\\controllers\\tourismeventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BC7D4E-B4D5-4DA6-A265-BA635AAADA25}|Tourism.API.csproj|solutionrelative:controllers\\tourismeventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D828E0AA-7AB4-4340-9D4C-4DCCF1B44DC7}|..\\Domain\\Tourism.Domain.csproj|d:\\tourism\\tourismbackend\\tourismbackend-20-09-2026\\domain\\entities\\attraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|d:\\tourismbackend-20-09-2026\\application\\features\\photographers\\update\\updatephotographercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D828E0AA-7AB4-4340-9D4C-4DCCF1B44DC7}|..\\Domain\\Tourism.Domain.csproj|d:\\tourism\\tourismbackend\\tourismbackend-20-09-2026\\domain\\entities\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|d:\\tourismbackend-20-09-2026\\application\\features\\attractions\\update\\updateattractioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|d:\\tourismbackend-20-09-2026\\application\\features\\attractions\\update\\updateattractioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,115 +39,169 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20260921221902_event.cs",
-              "DocumentMoniker": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Infrastructure\\Migrations\\20260921221902_event.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Migrations\\20260921221902_event.cs",
-              "ToolTip": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Infrastructure\\Migrations\\20260921221902_event.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Migrations\\20260921221902_event.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T22:19:02.719Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TourismEventConfiguration.cs",
-              "DocumentMoniker": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Infrastructure\\Persistence\\Configurations\\TourismEventConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Persistence\\Configurations\\TourismEventConfiguration.cs",
-              "ToolTip": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Infrastructure\\Persistence\\Configurations\\TourismEventConfiguration.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Persistence\\Configurations\\TourismEventConfiguration.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA2wCcAAAAFAAAAAAAAAA==",
+              "Title": "Photographer.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Domain\\Entities\\Photographer.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Photographer.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Domain\\Entities\\Photographer.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\Photographer.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwBQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T22:17:57.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-27T11:26:59.409Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TourismInfoConfiguration.cs",
-              "DocumentMoniker": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Infrastructure\\Persistence\\Configurations\\TourismInfoConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Persistence\\Configurations\\TourismInfoConfiguration.cs",
-              "ToolTip": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Infrastructure\\Persistence\\Configurations\\TourismInfoConfiguration.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Persistence\\Configurations\\TourismInfoConfiguration.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwAsAAAACAAAAAAAAAA==",
+              "Title": "CreatePhotographerCommandHandler.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Photographers\\Create\\CreatePhotographerCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Photographers\\Create\\CreatePhotographerCommandHandler.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Photographers\\Create\\CreatePhotographerCommandHandler.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Photographers\\Create\\CreatePhotographerCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T22:11:54.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-27T11:22:04.206Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreatePhotographerCommand.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Photographers\\Create\\CreatePhotographerCommand.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Photographers\\Create\\CreatePhotographerCommand.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Photographers\\Create\\CreatePhotographerCommand.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Photographers\\Create\\CreatePhotographerCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwAMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-27T11:22:01.344Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBgAAAAAAAAAAAAAAA==",
+              "Title": "UpdatePhotographerCommand.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Photographers\\Update\\UpdatePhotographerCommand.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Photographers\\Update\\UpdatePhotographerCommand.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Photographers\\Update\\UpdatePhotographerCommand.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Photographers\\Update\\UpdatePhotographerCommand.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwBQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T22:11:34.828Z",
+              "WhenOpened": "2026-09-27T11:24:47.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PhotographersController.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\AmlqkEldwla_Dewan\\Controllers\\PhotographersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PhotographersController.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\AmlqkEldwla_Dewan\\Controllers\\PhotographersController.cs",
+              "RelativeToolTip": "Controllers\\PhotographersController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAcwD0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-27T11:23:45.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TourismEventsController.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\AmlqkEldwla_Dewan\\Controllers\\TourismEventsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TourismEventsController.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\AmlqkEldwla_Dewan\\Controllers\\TourismEventsController.cs",
+              "RelativeToolTip": "Controllers\\TourismEventsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-27T11:25:26.872Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Attraction.cs",
-              "DocumentMoniker": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Domain\\Entities\\Attraction.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Attraction.cs",
-              "ToolTip": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Domain\\Entities\\Attraction.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\Attraction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
+              "Title": "UpdatePhotographerCommandHandler.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Photographers\\Update\\UpdatePhotographerCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Photographers\\Update\\UpdatePhotographerCommandHandler.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Photographers\\Update\\UpdatePhotographerCommandHandler.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Photographers\\Update\\UpdatePhotographerCommandHandler.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAYwGgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T22:05:38.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-27T11:24:49.803Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Restaurant.cs",
-              "DocumentMoniker": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Domain\\Entities\\Restaurant.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Restaurant.cs",
-              "ToolTip": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Domain\\Entities\\Restaurant.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\Restaurant.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UpdateAttractionCommandHandler.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Attractions\\Update\\UpdateAttractionCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Attractions\\Update\\UpdateAttractionCommandHandler.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Attractions\\Update\\UpdateAttractionCommandHandler.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Attractions\\Update\\UpdateAttractionCommandHandler.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAYwHkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T22:05:20.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-27T11:24:40.2Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TourismEvent.cs",
-              "DocumentMoniker": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Domain\\Entities\\TourismEvent.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\TourismEvent.cs",
-              "ToolTip": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Domain\\Entities\\TourismEvent.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\TourismEvent.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA+wB8AAAAfAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "UpdateAttractionCommand.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Attractions\\Update\\UpdateAttractionCommand.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Attractions\\Update\\UpdateAttractionCommand.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Attractions\\Update\\UpdateAttractionCommand.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Attractions\\Update\\UpdateAttractionCommand.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T22:04:42.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-27T11:24:38.237Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1872,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EventContactInfo.cs",
-              "DocumentMoniker": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Domain\\Entities\\EventContactInfo.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\EventContactInfo.cs",
-              "ToolTip": "D:\\tourism\\tourismbackend\\TourismBackEnd-20-09-2026\\Domain\\Entities\\EventContactInfo.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\EventContactInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T22:04:11.607Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1332,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             }
           ]
         }

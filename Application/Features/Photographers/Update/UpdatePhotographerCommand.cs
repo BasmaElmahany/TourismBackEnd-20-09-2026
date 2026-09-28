@@ -1,9 +1,5 @@
 ﻿using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Tourism.Application.Common.DTOs;
 using Tourism.Application.Features.Authentication.DTOs;
 
@@ -14,7 +10,8 @@ namespace Tourism.Application.Features.Photographers.Update
          LocalizedTextDto Name,
          LocalizedTextDto? Bio,
          List<object>? Specialties,
-         string? ImageUrl,
+         IFormFile? ImageFile,                     // Optional: upload a new image
+         string? ExistingImageUrl,                 // Keeps the current image if no new file is uploaded
          LocalizedTextDto? Phone,
          LocalizedTextDto? Email,
          SocialLinksDto? Social,
