@@ -105,8 +105,8 @@ namespace Tourism.Application.Features.Souvenir.Create
                     AcceptsCreditCard = entity.AcceptsCreditCard,
                     HasDelivery = entity.HasDelivery,
                     HasOnlineStore = entity.HasOnlineStore,
-                    Specialties = entity.Specialties,
-                    SpecialtiesAr = entity.SpecialtiesAr,
+                    Specialties = entity.Specialties ?? new List<string>(),
+                    SpecialtiesAr = entity.SpecialtiesAr ?? new List<string>(),
                     Products = new List<SouvenirProductDto>()
                 };
 
