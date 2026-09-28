@@ -8,7 +8,6 @@ using Tourism.Application.Features.DTOs;
 using Tourism.Application.Features.Events.Create;
 using Tourism.Application.Features.Events.Delete;
 using Tourism.Application.Features.Events.GetAll;
-using Tourism.Application.Features.Events.GetById;
 using Tourism.Application.Features.Events.Update;
 
 namespace Tourism.API.Controllers
