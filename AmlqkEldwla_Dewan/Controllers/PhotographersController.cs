@@ -37,14 +37,14 @@ namespace Tourism.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<ApiResponse<PhotographerDto>>> Create([FromBody] CreatePhotographerCommand command, CancellationToken cancellationToken)
+        public async Task<ActionResult<ApiResponse<PhotographerDto>>> Create([FromForm] CreatePhotographerCommand command, CancellationToken cancellationToken)
         {
             var response = await _sender.Send(command, cancellationToken);
             return StatusCode(response.Code, response);
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult<ApiResponse<bool>>> Update(string id, [FromBody] UpdatePhotographerCommand command, CancellationToken cancellationToken)
+        public async Task<ActionResult<ApiResponse<bool>>> Update(string id, [FromForm] UpdatePhotographerCommand command, CancellationToken cancellationToken)
         {
             if (id != command.Id)
             {
