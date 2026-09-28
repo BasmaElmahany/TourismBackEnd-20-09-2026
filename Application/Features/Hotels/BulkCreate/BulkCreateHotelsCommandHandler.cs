@@ -55,10 +55,10 @@ namespace Tourism.Application.Features.Hotels.BulkCreate
                     RoomTypes = item.RoomTypes?.Select(r => new LocalizedText { En = r.En, Ar = r.Ar }).ToList() ?? new List<LocalizedText>(),
                     ContactInfo = new HotelContactInfo
                     {
-                        Phone = new LocalizedText { En = item.ContactInfo.Phone.En, Ar = item.ContactInfo.Phone.Ar },
-                        Email = new LocalizedText { En = item.ContactInfo.Email.En, Ar = item.ContactInfo.Email.Ar },
-                        Website = item.ContactInfo.Website is null ? null : new LocalizedText { En = item.ContactInfo.Website.En, Ar = item.ContactInfo.Website.Ar }
-                    },
+                        Phone = item.ContactInfo.Phone,
+                        Email = item.ContactInfo.Email,
+                        Website = item.ContactInfo.Website is null ? null : item.ContactInfo.Website
+                            },
                     StarRating = item.StarRating
                 }).ToList();
 

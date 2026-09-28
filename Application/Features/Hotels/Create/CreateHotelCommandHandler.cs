@@ -63,9 +63,9 @@ namespace Tourism.Application.Features.Hotels.Create
                     RoomTypes = request.RoomTypes?.Select(r => new LocalizedText { En = r.En, Ar = r.Ar }).ToList() ?? new List<LocalizedText>(),
                     ContactInfo = new HotelContactInfo
                     {
-                        Phone = new LocalizedText { En = request.ContactInfo.Phone.En, Ar = request.ContactInfo.Phone.Ar },
-                        Email = new LocalizedText { En = request.ContactInfo.Email.En, Ar = request.ContactInfo.Email.Ar },
-                        Website = request.ContactInfo.Website is null ? null : new LocalizedText { En = request.ContactInfo.Website.En, Ar = request.ContactInfo.Website.Ar }
+                        Phone = request.ContactInfo.Phone,
+                        Email = request.ContactInfo.Phone,
+                        Website = request.ContactInfo.Phone
                     },
                     StarRating = request.StarRating
                 };
@@ -80,15 +80,15 @@ namespace Tourism.Application.Features.Hotels.Create
                     Description = request.Description,
                     ImageUrl = entity.ImageUrl,
                     ImageGallery = entity.ImageGallery,
-                    Latitude = entity.Latitude,
-                    Longitude = entity.Longitude,
-                    Rating = entity.Rating,
-                    ReviewCount = entity.ReviewCount,
+                    Latitude = entity.Latitude ?? 0,
+                    Longitude = entity.Longitude ?? 0,
+                    Rating = entity.Rating ?? 0,
+                    ReviewCount = entity.ReviewCount ?? 0,
                     PriceRange = request.PriceRange,
                     Amenities = request.Amenities ?? new List<LocalizedTextDto>(),
                     RoomTypes = request.RoomTypes ?? new List<LocalizedTextDto>(),
                     ContactInfo = request.ContactInfo,
-                    StarRating = entity.StarRating
+                    StarRating = entity.StarRating ?? 0
                 };
 
                 return new ApiResponse<HotelDto>
