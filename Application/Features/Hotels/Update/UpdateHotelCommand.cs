@@ -13,19 +13,19 @@ namespace Tourism.Application.Features.Hotels.Update
     public record UpdateHotelCommand(
          string Id,
          LocalizedTextDto Name,
-         LocalizedTextDto Description,
+         LocalizedTextDto? Description,
          IFormFile? ImageFile,                      
          string? ExistingImageUrl,                
          List<IFormFile>? NewImageGalleryFiles,     
          List<string>? ExistingGalleryUrls,     
-         double Latitude,
-         double Longitude,
-         double Rating,
-         int ReviewCount,
-         LocalizedTextDto PriceRange,
-         List<LocalizedTextDto> Amenities,
-         List<LocalizedTextDto> RoomTypes,
-         HotelContactInfoDto ContactInfo,
-         int StarRating
+         double? Latitude,
+         double? Longitude,
+         double? Rating,
+         int? ReviewCount,
+         LocalizedTextDto? PriceRange,
+         List<LocalizedTextDto>? Amenities,
+         List<LocalizedTextDto>? RoomTypes,
+         HotelContactInfoDto? ContactInfo,
+         int? StarRating
      ) : IRequest<ApiResponse<bool>>;
 }

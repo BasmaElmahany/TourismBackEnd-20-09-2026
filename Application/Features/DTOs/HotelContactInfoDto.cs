@@ -9,8 +9,8 @@ namespace Tourism.Application.Features.Authentication.DTOs
 {
     public class HotelContactInfoDto
     {
-        [JsonPropertyName("phone")] public LocalizedTextDto Phone { get; set; } = new();
-        [JsonPropertyName("email")] public LocalizedTextDto Email { get; set; } = new();
-        [JsonPropertyName("website")][JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] public LocalizedTextDto? Website { get; set; }
+        [JsonPropertyName("phone")] public string? Phone { get; set; } 
+        [JsonPropertyName("email")] public string? Email { get; set; } 
+        [JsonPropertyName("website")][JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] public string? Website { get; set; }
     }
 }

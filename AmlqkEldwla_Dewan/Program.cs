@@ -32,7 +32,9 @@ namespace Tourism
                             "http://localhost:4200",
                             "https://localhost:4200",
                             "http://172.36.1.161:1067",
-                            "http://172.36.1.161"
+                            "http://172.36.1.161",
+                            "https://tourism.minya.gov.eg",
+                            "http://172.16.1.36"
                         )
                         .AllowAnyHeader()
                         .AllowAnyMethod()

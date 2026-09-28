@@ -9,8 +9,8 @@ namespace Tourism.Domain.Entities
 {
     public class HotelContactInfo
     {
-        public LocalizedText Phone { get; set; } = new();
-        public LocalizedText Email { get; set; } = new();
-        public LocalizedText? Website { get; set; }
+        public string? Phone { get; set; } 
+        public string? Email { get; set; } 
+        public string? Website { get; set; }
     }
 }

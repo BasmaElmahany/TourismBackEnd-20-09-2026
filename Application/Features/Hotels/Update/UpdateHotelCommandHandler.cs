@@ -1,10 +1,5 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Tourism.Application.Common.DTOs;
 using Tourism.Application.IUnitofwork;
 using Tourism.Domain.Entities.Common;
@@ -92,9 +87,9 @@ namespace Tourism.Application.Features.Hotels.Update
                 entity.RoomTypes = request.RoomTypes?.Select(r => new LocalizedText { En = r.En, Ar = r.Ar }).ToList() ?? new List<LocalizedText>();
                 entity.ContactInfo = new HotelContactInfo
                 {
-                    Phone = new LocalizedText { En = request.ContactInfo.Phone.En, Ar = request.ContactInfo.Phone.Ar },
-                    Email = new LocalizedText { En = request.ContactInfo.Email.En, Ar = request.ContactInfo.Email.Ar },
-                    Website = request.ContactInfo.Website is null ? null : new LocalizedText { En = request.ContactInfo.Website.En, Ar = request.ContactInfo.Website.Ar }
+                    Phone = request.ContactInfo.Phone ,
+                    Email = request.ContactInfo.Email,
+                    Website = request.ContactInfo.Website is null ? null : request.ContactInfo.Website
                 };
                 entity.StarRating = request.StarRating;
 

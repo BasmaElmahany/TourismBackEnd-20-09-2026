@@ -47,20 +47,20 @@ namespace Tourism.Application.Features.Hotels.GetById
                     Description = new LocalizedTextDto { En = x.Description.En, Ar = x.Description.Ar },
                     ImageUrl = x.ImageUrl,
                     ImageGallery = x.ImageGallery ?? new List<string>(),
-                    Latitude = x.Latitude,
-                    Longitude = x.Longitude,
-                    Rating = x.Rating,
-                    ReviewCount = x.ReviewCount,
+                    Latitude = x.Latitude ?? 0,
+                    Longitude = x.Longitude ?? 0,
+                    Rating = x.Rating ?? 0,
+                    ReviewCount = x.ReviewCount ?? 0,
                     PriceRange = new LocalizedTextDto { En = x.PriceRange.En, Ar = x.PriceRange.Ar },
                     Amenities = x.Amenities?.Select(a => new LocalizedTextDto { En = a.En, Ar = a.Ar }).ToList() ?? new List<LocalizedTextDto>(),
                     RoomTypes = x.RoomTypes?.Select(r => new LocalizedTextDto { En = r.En, Ar = r.Ar }).ToList() ?? new List<LocalizedTextDto>(),
                     ContactInfo = new HotelContactInfoDto
                     {
-                        Phone = new LocalizedTextDto { En = x.ContactInfo.Phone.En, Ar = x.ContactInfo.Phone.Ar },
-                        Email = new LocalizedTextDto { En = x.ContactInfo.Email.En, Ar = x.ContactInfo.Email.Ar },
-                        Website = x.ContactInfo.Website is null ? null : new LocalizedTextDto { En = x.ContactInfo.Website.En, Ar = x.ContactInfo.Website.Ar }
+                        Phone = x.ContactInfo.Phone,
+                        Email = x.ContactInfo.Email,
+                        Website = x.ContactInfo.Website is null ? null : x.ContactInfo.Website
                     },
-                    StarRating = x.StarRating
+                    StarRating = x.StarRating ?? 0
                 };
 
                 return new ApiResponse<HotelDto>
