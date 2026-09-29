@@ -3,10 +3,26 @@
   "WorkspaceRootPath": "D:\\TourismBackEnd-20-09-2026\\AmlqkEldwla_Dewan\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C2BC7D4E-B4D5-4DA6-A265-BA635AAADA25}|Tourism.API.csproj|d:\\tourismbackend-20-09-2026\\amlqkeldwla_dewan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C2BC7D4E-B4D5-4DA6-A265-BA635AAADA25}|Tourism.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{015009DC-3E24-483D-9966-C4DF7E8A2240}|..\\Infrastructure\\Tourism.Infrastructure.csproj|d:\\tourismbackend-20-09-2026\\infrastructure\\migrations\\20260928125341_makesouvenirproductnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|d:\\tourismbackend-20-09-2026\\application\\features\\dtos\\souvenirproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|d:\\tourismbackend-20-09-2026\\application\\features\\souvenir\\createsouvenirproduct\\createsouvenirproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|d:\\tourismbackend-20-09-2026\\application\\features\\souvenir\\create\\createsouvenirshopcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|d:\\tourismbackend-20-09-2026\\application\\features\\souvenir\\createsouvenirproduct\\createsouvenirproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D828E0AA-7AB4-4340-9D4C-4DCCF1B44DC7}|..\\Domain\\Tourism.Domain.csproj|d:\\tourismbackend-20-09-2026\\domain\\entities\\souvenirproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,34 +32,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreateSouvenirProductCommand.cs",
-              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommand.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommand.cs",
-              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommand.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T12:32:42.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateSouvenirProductCommandHandler.cs",
-              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommandHandler.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommandHandler.cs",
-              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommandHandler.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommandHandler.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAuwGwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T12:32:40.239Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -67,6 +57,96 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\AmlqkEldwla_Dewan\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\AmlqkEldwla_Dewan\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-29T06:45:39.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20260928125341_MakeSouvenirProductNullable.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Infrastructure\\Migrations\\20260928125341_MakeSouvenirProductNullable.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Migrations\\20260928125341_MakeSouvenirProductNullable.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Infrastructure\\Migrations\\20260928125341_MakeSouvenirProductNullable.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Migrations\\20260928125341_MakeSouvenirProductNullable.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowFMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T12:53:41.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SouvenirProductDto.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\DTOs\\SouvenirProductDto.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\DTOs\\SouvenirProductDto.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\DTOs\\SouvenirProductDto.cs",
+              "RelativeToolTip": "..\\Application\\Features\\DTOs\\SouvenirProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T12:50:46.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateSouvenirProductCommandHandler.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommandHandler.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommandHandler.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T12:50:41.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SouvenirProduct.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Domain\\Entities\\SouvenirProduct.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\SouvenirProduct.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Domain\\Entities\\SouvenirProduct.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\SouvenirProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T12:46:05.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateSouvenirProductCommand.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommand.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommand.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommand.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\CreateSouvenirProduct\\CreateSouvenirProductCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T12:32:42.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateSouvenirShopCommandHandler.cs",
+              "DocumentMoniker": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Souvenir\\Create\\CreateSouvenirShopCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Souvenir\\Create\\CreateSouvenirShopCommandHandler.cs",
+              "ToolTip": "D:\\TourismBackEnd-20-09-2026\\Application\\Features\\Souvenir\\Create\\CreateSouvenirShopCommandHandler.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Souvenir\\Create\\CreateSouvenirShopCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T12:41:41.858Z"
             }
           ]
         },

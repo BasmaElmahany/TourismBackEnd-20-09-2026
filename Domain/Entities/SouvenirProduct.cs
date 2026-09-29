@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Tourism.Domain.Entities
 {
@@ -17,18 +12,18 @@ namespace Tourism.Domain.Entities
 
         public string Name { get; set; } = string.Empty;
         public string NameAr { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
-        public string DescriptionAr { get; set; } = string.Empty;
+        public string? Description { get; set; } = string.Empty;
+        public string? DescriptionAr { get; set; } = string.Empty;
 
         public string Category { get; set; } = string.Empty;
         public string CategoryAr { get; set; } = string.Empty;
-        public decimal Price { get; set; }
+        public decimal? Price { get; set; }
         public string Currency { get; set; } = "EGP";
 
         public string Image { get; set; } = string.Empty;
         public List<string>? Images { get; set; }
 
-        public bool InStock { get; set; }
+        public bool? InStock { get; set; }
         public bool? Handmade { get; set; }
         public string? Material { get; set; }
         public string? MaterialAr { get; set; }

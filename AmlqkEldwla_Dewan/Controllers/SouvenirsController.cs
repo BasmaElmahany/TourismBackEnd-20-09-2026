@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Tourism.Application.Common.DTOs;
 using Tourism.Application.Features.Authentication.DTOs;
 using Tourism.Application.Features.Souvenir.BulkCreate;
-using Tourism.Application.Features.Souvenir.Create;
 using Tourism.Application.Features.Souvenir.CreateSouvenirProduct;
 using Tourism.Application.Features.Souvenir.Delete;
 using Tourism.Application.Features.Souvenir.DeleteSouvenirProduct;
@@ -11,7 +10,6 @@ using Tourism.Application.Features.Souvenir.GetAll;
 using Tourism.Application.Features.Souvenir.GetAllSouvenirCategories;
 using Tourism.Application.Features.Souvenir.GetById;
 using Tourism.Application.Features.Souvenir.GetProductsByShopId;
-using Tourism.Application.Features.Souvenir.Update;
 
 namespace Tourism.API.Controllers
 {
@@ -106,12 +104,11 @@ namespace Tourism.API.Controllers
         }
 
         [HttpPost("products")]
-        public async Task<ActionResult<ApiResponse<SouvenirProductDto>>> CreateProduct(
-            [FromBody] CreateSouvenirProductCommand command,
-            CancellationToken cancellationToken)
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> CreateProduct([FromForm] CreateSouvenirProductCommand command)
         {
-            var response = await _sender.Send(command, cancellationToken);
-            return StatusCode(response.Code, response);
+            var result = await _sender.Send(command);
+            return StatusCode(result.Code, result);
         }
 
         [HttpDelete("products/{id}")]

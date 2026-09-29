@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using Tourism.Application.Common.DTOs;
 using Tourism.Application.Features.Authentication.DTOs;
 
@@ -8,15 +9,17 @@ namespace Tourism.Application.Features.Souvenir.CreateSouvenirProduct
         string ShopId,
         string Name,
         string NameAr,
-        string Description,
-        string DescriptionAr,
-        string Category,
-        string CategoryAr,
-        decimal Price,
+        string? Description,
+        string? DescriptionAr,
+        string? Category,
+        string? CategoryAr,
+        decimal? Price,
         string Currency,
-        string Image,
+        IFormFile? ImageFile,
+        List<IFormFile>? ImagesFiles,
+        string? Image,
         List<string>? Images,
-        bool InStock,
+        bool? InStock,
         bool? Handmade,
         string? Material,
         string? MaterialAr,
