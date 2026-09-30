@@ -1,12 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Tourism.Application.Common.DTOs;
 using Tourism.Application.Features.Authentication.DTOs;
+using Tourism.Application.Interfaces;
 using Tourism.Application.IUnitofwork;
 using Tourism.Domain.Entities;
 
@@ -16,10 +12,13 @@ namespace Tourism.Application.Features.Souvenir.CreateSouvenirProduct
          : IRequestHandler<CreateSouvenirProductCommand, ApiResponse<SouvenirProductDto>>
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IFileStorageService _fileStorage;
 
-        public CreateSouvenirProductCommandHandler(IUnitOfWork unitOfWork)
+        public CreateSouvenirProductCommandHandler(IUnitOfWork unitOfWork,
+                                                   IFileStorageService fileStorage)
         {
             _unitOfWork = unitOfWork;
+            _fileStorage = fileStorage;
         }
 
         public async Task<ApiResponse<SouvenirProductDto>> Handle(
@@ -28,6 +27,17 @@ namespace Tourism.Application.Features.Souvenir.CreateSouvenirProduct
         {
             try
             {
+                if (request.Price < 0)
+                {
+                    return new ApiResponse<SouvenirProductDto>
+                    {
+                        Success = false,
+                        Data = null,
+                        Message = "السعر لا يمكن أن يكون سالبًا",
+                        Code = StatusCodes.Status400BadRequest
+                    };
+                }
+
                 var shop = await _unitOfWork.SouvenirShops.GetByIdAsync(request.ShopId, cancellationToken);
                 if (shop is null)
                 {
@@ -38,6 +48,19 @@ namespace Tourism.Application.Features.Souvenir.CreateSouvenirProduct
                         Message = "المتجر المحدد غير موجود",
                         Code = StatusCodes.Status404NotFound
                     };
+                }
+
+                string mainImage = request.Image ?? string.Empty;
+                if (request.ImageFile != null && request.ImageFile.Length > 0)
+                {
+                    mainImage = await _fileStorage.SaveFileAsync(request.ImageFile, "souvenirs", cancellationToken);
+                }
+
+                var gallery = new List<string>(request.Images ?? new List<string>());
+                if (request.ImagesFiles != null && request.ImagesFiles.Any())
+                {
+                    var uploaded = await _fileStorage.SaveFilesAsync(request.ImagesFiles, "souvenirs", cancellationToken);
+                    gallery.AddRange(uploaded);
                 }
 
                 var entity = new SouvenirProduct
@@ -52,8 +75,8 @@ namespace Tourism.Application.Features.Souvenir.CreateSouvenirProduct
                     CategoryAr = request.CategoryAr,
                     Price = request.Price,
                     Currency = request.Currency,
-                    Image = request.Image,
-                    Images = request.Images ?? new List<string>(),
+                    Image = mainImage,
+                    Images = gallery,
                     InStock = request.InStock,
                     Handmade = request.Handmade,
                     Material = request.Material,
@@ -94,13 +117,13 @@ namespace Tourism.Application.Features.Souvenir.CreateSouvenirProduct
                     Code = StatusCodes.Status201Created
                 };
             }
-            catch
+            catch (Exception ex)
             {
                 return new ApiResponse<SouvenirProductDto>
                 {
                     Success = false,
                     Data = null,
-                    Message = "حدث خطأ أثناء إضافة المنتج",
+                    Message = $"حدث خطأ أثناء إضافة المنتج: {ex.Message}",
                     Code = StatusCodes.Status500InternalServerError
                 };
             }
