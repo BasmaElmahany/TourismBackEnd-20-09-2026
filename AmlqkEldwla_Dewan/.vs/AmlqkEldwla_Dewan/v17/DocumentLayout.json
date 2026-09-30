@@ -10,37 +10,16 @@
       "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\hotels\\getall\\getallhotelsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\hotels\\getall\\getallhotelsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\dtos\\hoteldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\dtos\\hotelcontactinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\hotels\\update\\updatehotelcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\hotels\\update\\updatehotelcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\TourismBackEnd\\Infrastructure\\Migrations\\20260928081305_makeTheContactInfoString_hotels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\hotels\\getbyid\\gethotelbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\hotels\\create\\createhotelcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\hotels\\bulkcreate\\bulkcreatehotelscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D828E0AA-7AB4-4340-9D4C-4DCCF1B44DC7}|..\\Domain\\Tourism.Domain.csproj|e:\\tourismbackend\\domain\\entities\\hotelcontactinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88E7D2A8-7B34-434B-9D1E-D823740A17B0}|..\\Application\\Tourism.Application.csproj|e:\\tourismbackend\\application\\features\\hotels\\create\\createhotelcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D828E0AA-7AB4-4340-9D4C-4DCCF1B44DC7}|..\\Domain\\Tourism.Domain.csproj|e:\\tourismbackend\\domain\\entities\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D828E0AA-7AB4-4340-9D4C-4DCCF1B44DC7}|..\\Domain\\Tourism.Domain.csproj|e:\\tourismbackend\\domain\\tourism.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,112 +29,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HotelsController.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\AmlqkEldwla_Dewan\\Controllers\\HotelsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HotelsController.cs",
-              "ToolTip": "E:\\TourismBackEnd\\AmlqkEldwla_Dewan\\Controllers\\HotelsController.cs",
-              "RelativeToolTip": "Controllers\\HotelsController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T08:29:26.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HotelDto.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\DTOs\\HotelDto.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\DTOs\\HotelDto.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\DTOs\\HotelDto.cs",
-              "RelativeToolTip": "..\\Application\\Features\\DTOs\\HotelDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T08:25:42.425Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetAllHotelsQuery.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\GetAll\\GetAllHotelsQuery.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Hotels\\GetAll\\GetAllHotelsQuery.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\GetAll\\GetAllHotelsQuery.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Hotels\\GetAll\\GetAllHotelsQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T08:25:35.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BulkCreateHotelsCommandHandler.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\BulkCreate\\BulkCreateHotelsCommandHandler.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Hotels\\BulkCreate\\BulkCreateHotelsCommandHandler.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\BulkCreate\\BulkCreateHotelsCommandHandler.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Hotels\\BulkCreate\\BulkCreateHotelsCommandHandler.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAcwD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T08:10:51.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HotelContactInfo.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Domain\\Entities\\HotelContactInfo.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\HotelContactInfo.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Domain\\Entities\\HotelContactInfo.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\HotelContactInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T08:09:42.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Hotel.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Domain\\Entities\\Hotel.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Hotel.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Domain\\Entities\\Hotel.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\Hotel.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA5wB4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T08:09:39.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HotelContactInfoDto.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\DTOs\\HotelContactInfoDto.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\DTOs\\HotelContactInfoDto.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\DTOs\\HotelContactInfoDto.cs",
-              "RelativeToolTip": "..\\Application\\Features\\DTOs\\HotelContactInfoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T08:08:56.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateHotelCommand.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\Update\\UpdateHotelCommand.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Hotels\\Update\\UpdateHotelCommand.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\Update\\UpdateHotelCommand.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Hotels\\Update\\UpdateHotelCommand.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABsAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T07:29:58.237Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -164,62 +39,70 @@
               "RelativeDocumentMoniker": "..\\Application\\Features\\Hotels\\GetAll\\GetAllHotelsQueryHandler.cs",
               "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\GetAll\\GetAllHotelsQueryHandler.cs",
               "RelativeToolTip": "..\\Application\\Features\\Hotels\\GetAll\\GetAllHotelsQueryHandler.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAqwEsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T08:11:42.469Z",
+              "WhenOpened": "2026-09-28T12:39:33.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HotelsController.cs",
+              "DocumentMoniker": "E:\\TourismBackEnd\\AmlqkEldwla_Dewan\\Controllers\\HotelsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HotelsController.cs",
+              "ToolTip": "E:\\TourismBackEnd\\AmlqkEldwla_Dewan\\Controllers\\HotelsController.cs",
+              "RelativeToolTip": "Controllers\\HotelsController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T11:32:40.682Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20260928081305_makeTheContactInfoString_hotels.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Infrastructure\\Migrations\\20260928081305_makeTheContactInfoString_hotels.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Migrations\\20260928081305_makeTheContactInfoString_hotels.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Infrastructure\\Migrations\\20260928081305_makeTheContactInfoString_hotels.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Migrations\\20260928081305_makeTheContactInfoString_hotels.cs",
+              "DocumentIndex": 4,
+              "Title": "Hotel.cs",
+              "DocumentMoniker": "E:\\TourismBackEnd\\Domain\\Entities\\Hotel.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Hotel.cs",
+              "ToolTip": "E:\\TourismBackEnd\\Domain\\Entities\\Hotel.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\Hotel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T11:06:22.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tourism.Domain.csproj",
+              "DocumentMoniker": "E:\\TourismBackEnd\\Domain\\Tourism.Domain.csproj",
+              "RelativeDocumentMoniker": "..\\Domain\\Tourism.Domain.csproj",
+              "ToolTip": "E:\\TourismBackEnd\\Domain\\Tourism.Domain.csproj",
+              "RelativeToolTip": "..\\Domain\\Tourism.Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T08:13:05.41Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-28T11:06:19.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "CreateHotelCommandHandler.cs",
               "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\Create\\CreateHotelCommandHandler.cs",
               "RelativeDocumentMoniker": "..\\Application\\Features\\Hotels\\Create\\CreateHotelCommandHandler.cs",
               "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\Create\\CreateHotelCommandHandler.cs",
               "RelativeToolTip": "..\\Application\\Features\\Hotels\\Create\\CreateHotelCommandHandler.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwEMAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAqwJYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T08:11:18.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-28T11:04:32.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateHotelCommandHandler.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\Update\\UpdateHotelCommandHandler.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Hotels\\Update\\UpdateHotelCommandHandler.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\Update\\UpdateHotelCommandHandler.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Hotels\\Update\\UpdateHotelCommandHandler.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAiwHYAAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "CreateHotelCommand.cs",
+              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\Create\\CreateHotelCommand.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Hotels\\Create\\CreateHotelCommand.cs",
+              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\Create\\CreateHotelCommand.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Hotels\\Create\\CreateHotelCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T07:30:36.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetHotelByIdQueryHandler.cs",
-              "DocumentMoniker": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\GetById\\GetHotelByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Hotels\\GetById\\GetHotelByIdQueryHandler.cs",
-              "ToolTip": "E:\\TourismBackEnd\\Application\\Features\\Hotels\\GetById\\GetHotelByIdQueryHandler.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Hotels\\GetById\\GetHotelByIdQueryHandler.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwD0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T08:12:14.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-28T10:56:36.765Z"
             }
           ]
         }
