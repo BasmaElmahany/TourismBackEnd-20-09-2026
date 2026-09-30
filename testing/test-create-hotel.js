@@ -1,104 +1,65 @@
+const fs = require('fs');
+const path = require('path');
 const axios = require('axios');
 const FormData = require('form-data');
+const https = require('https');
 
-// الرابط المباشر للباك إند
-const API_URL = 'https://localhost:7123/api/Hotels';
+// إنشاء صور وهمية للاختبار
+const mainImagePath = path.join(__dirname, 'dummy-main.jpg');
+const gallery1Path = path.join(__dirname, 'dummy-gallery-1.jpg');
+const gallery2Path = path.join(__dirname, 'dummy-gallery-2.jpg');
 
-async function testCreateHotel() {
-  const form = new FormData();
+fs.writeFileSync(mainImagePath, 'Fake main image');
+fs.writeFileSync(gallery1Path, 'Fake gallery image 1');
+fs.writeFileSync(gallery2Path, 'Fake gallery image 2');
 
-  // 1. توليد صور وهمية بصيغة Buffer لاختبار رفع الملفات
-  const dummyMainImage = Buffer.from('Fake main image content for testing');
-  const dummyGalleryImage1 = Buffer.from('Fake gallery image 1 content');
-  const dummyGalleryImage2 = Buffer.from('Fake gallery image 2 content');
+async function testCreateHotelWithImages() {
+    const form = new FormData();
 
-  // 2. تعبئة النصوص المترجمة (LocalizedText)
-  form.append('Name.Ar', 'فندق حورس السياحي بالمنيا');
-  form.append('Name.En', 'Horus Tourist Hotel Minya');
+    // 1. الاسم (إجباري)
+    form.append('Name.Ar', 'فندق تجريبي بالصور');
+    form.append('Name.En', 'Test Hotel With Images');
 
-  form.append('Description.Ar', 'فندق مطل على كورنيش النيل بالمنيا، يقدم أفضل الخدمات الفندقية.');
-  form.append('Description.En', 'Hotel overlooking the Minya Nile Corniche, offering premium accommodation services.');
+    // 2. الصورة الرئيسية (ملف)
+    form.append('ImageFile', fs.createReadStream(mainImagePath));
 
-  // 3. الأرقام والإحداثيات
-  form.append('Latitude', '28.109885');
-  form.append('Longitude', '30.750301');
-  form.append('Rating', '4.5');
-  form.append('ReviewCount', '120');
-  form.append('StarRating', '4');
+    // 3. صور المعرض (ملفات متعددة بنفس الاسم ImageGalleryFiles)
+    form.append('ImageGalleryFiles', fs.createReadStream(gallery1Path));
+    form.append('ImageGalleryFiles', fs.createReadStream(gallery2Path));
 
-  // 4. نطاق الأسعار
-  form.append('PriceRange.Ar', '1500 - 3200 ج.م');
-  form.append('PriceRange.En', '$30 - $65');
-
-  // 5. بيانات الاتصال (Nested Object)
-  form.append('ContactInfo.Phone.Ar', '0862345678');
-  form.append('ContactInfo.Phone.En', '0862345678');
-  form.append('ContactInfo.Email.Ar', 'info@horusminyahotel.eg');
-  form.append('ContactInfo.Email.En', 'info@horusminyahotel.eg');
-  form.append('ContactInfo.Website.Ar', 'https://horus-minya.eg');
-  form.append('ContactInfo.Website.En', 'https://horus-minya.eg');
-
-  // 6. قائمة المرافق (Amenities Array)
-  const amenities = [
-    { ar: 'واي فاي مجاني', en: 'Free Wi-Fi' },
-    { ar: 'حمام سباحة خارجي', en: 'Outdoor Pool' },
-    { ar: 'إطلالة نيلية', en: 'Nile View' }
-  ];
-
-  amenities.forEach((item, index) => {
-    form.append(`Amenities[${index}].Ar`, item.ar);
-    form.append(`Amenities[${index}].En`, item.en);
-  });
-
-  // 7. قائمة أنواع الغرف (RoomTypes Array)
-  const roomTypes = [
-    { ar: 'غرفة ديلوكس مفردة', en: 'Deluxe Single Room' },
-    { ar: 'جناح عائلي مطل على النيل', en: 'Family Suite Nile View' }
-  ];
-
-  roomTypes.forEach((item, index) => {
-    form.append(`RoomTypes[${index}].Ar`, item.ar);
-    form.append(`RoomTypes[${index}].En`, item.en);
-  });
-
-  // 8. إرفاق ملف الصورة الرئيسية (IFormFile)
-  form.append('ImageFile', dummyMainImage, {
-    filename: 'main_facade.jpg',
-    contentType: 'image/jpeg'
-  });
-
-  // 9. إرفاق ملفات المعرض (List<IFormFile>)
-  form.append('ImageGalleryFiles', dummyGalleryImage1, {
-    filename: 'lobby_view.jpg',
-    contentType: 'image/jpeg'
-  });
-
-  form.append('ImageGalleryFiles', dummyGalleryImage2, {
-    filename: 'suite_bedroom.jpg',
-    contentType: 'image/jpeg'
-  });
-
-  console.log('Sending request to:', API_URL);
-
-  try {
-    const response = await axios.post(API_URL, form, {
-      headers: {
-        ...form.getHeaders()
-      }
+    const agent = new https.Agent({
+        rejectUnauthorized: false
     });
 
-    console.log('\n Status Code:', response.status);
-    console.log(' Response Body:');
-    console.dir(response.data, { depth: null, colors: true });
+    try {
+        console.log('--- إرسال الاسم + الصورة الرئيسية + صور المعرض ---');
+        const apiUrl = 'https://localhost:7123/api/Hotels';
 
-  } catch (error) {
-    if (error.response) {
-      console.error('\n Server Error Response:', error.response.status);
-      console.dir(error.response.data, { depth: null, colors: true });
-    } else {
-      console.error('\n Network or Connection Error:', error.message);
+        const response = await axios.post(apiUrl, form, {
+            headers: {
+                ...form.getHeaders()
+            },
+            httpsAgent: agent
+        });
+
+        console.log('\n✅ نجحت العملية!');
+        console.log('Status Code:', response.status);
+        console.log('Response Data:', JSON.stringify(response.data, null, 2));
+
+    } catch (error) {
+        console.log('\n❌ فشل الطلب!');
+        if (error.response) {
+            console.log('HTTP Status:', error.response.status);
+            console.log('Response Body:', JSON.stringify(error.response.data, null, 2));
+        } else {
+            console.error('Error:', error.message);
+        }
+    } finally {
+        // حذف الملفات المؤقتة
+        [mainImagePath, gallery1Path, gallery2Path].forEach(file => {
+            if (fs.existsSync(file)) fs.unlinkSync(file);
+        });
     }
-  }
 }
 
-testCreateHotel();
+testCreateHotelWithImages();

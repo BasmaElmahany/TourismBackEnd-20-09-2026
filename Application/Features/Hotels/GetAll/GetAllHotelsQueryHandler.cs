@@ -28,30 +28,52 @@ namespace Tourism.Application.Features.Hotels.GetAll
             try
             {
                 var hotels = await _unitOfWork.Hotels.GetAllAsync(cancellationToken);
-
                 var dtos = hotels.Select(x => new HotelDto
                 {
                     Id = x.Id,
-                    Name = new LocalizedTextDto { En = x.Name.En, Ar = x.Name.Ar },
-                    Description = new LocalizedTextDto { En = x.Description.En, Ar = x.Description.Ar },
-                    ImageUrl = x.ImageUrl,
+                    Name = x.Name != null
+                        ? new LocalizedTextDto { En = x.Name.En, Ar = x.Name.Ar }
+                        : new LocalizedTextDto { En = string.Empty, Ar = string.Empty },
+
+                    // فحص null قبل القراءة
+                    Description = x.Description != null
+                        ? new LocalizedTextDto { En = x.Description.En, Ar = x.Description.Ar }
+                        : null,
+
+                    ImageUrl = x.ImageUrl ?? string.Empty,
                     ImageGallery = x.ImageGallery ?? new List<string>(),
                     Latitude = x.Latitude ?? 0,
                     Longitude = x.Longitude ?? 0,
                     Rating = x.Rating ?? 0,
                     ReviewCount = x.ReviewCount ?? 0,
-                    PriceRange = new LocalizedTextDto { En = x.PriceRange.En, Ar = x.PriceRange.Ar },
-                    Amenities = x.Amenities?.Select(a => new LocalizedTextDto { En = a.En, Ar = a.Ar }).ToList() ?? new List<LocalizedTextDto>(),
-                    RoomTypes = x.RoomTypes?.Select(r => new LocalizedTextDto { En = r.En, Ar = r.Ar }).ToList() ?? new List<LocalizedTextDto>(),
-                    ContactInfo = new HotelContactInfoDto
-                    {
-                        Phone = x.ContactInfo.Phone,
-                        Email = x.ContactInfo.Email,
-                        Website = x.ContactInfo.Website
-                    },
+
+                    // فحص null قبل القراءة
+                    PriceRange = x.PriceRange != null
+                        ? new LocalizedTextDto { En = x.PriceRange.En, Ar = x.PriceRange.Ar }
+                        : null,
+
+                    Amenities = x.Amenities?
+                        .Where(a => a != null)
+                        .Select(a => new LocalizedTextDto { En = a.En, Ar = a.Ar })
+                        .ToList() ?? new List<LocalizedTextDto>(),
+
+                    RoomTypes = x.RoomTypes?
+                        .Where(r => r != null)
+                        .Select(r => new LocalizedTextDto { En = r.En, Ar = r.Ar })
+                        .ToList() ?? new List<LocalizedTextDto>(),
+
+                    // فحص null قبل القراءة
+                    ContactInfo = x.ContactInfo != null
+                        ? new HotelContactInfoDto
+                        {
+                            Phone = x.ContactInfo.Phone,
+                            Email = x.ContactInfo.Email,
+                            Website = x.ContactInfo.Website
+                        }
+                        : null,
+
                     StarRating = x.StarRating ?? 0
                 }).ToList();
-
                 return new ApiResponse<List<HotelDto>>
                 {
                     Success = true,

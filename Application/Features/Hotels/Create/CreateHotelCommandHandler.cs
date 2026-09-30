@@ -3,14 +3,15 @@ using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Tourism.Application.Common.DTOs;
 using Tourism.Application.Features.Authentication.DTOs;
-using Tourism.Application.IUnitofwork;
-using Tourism.Domain.Entities.Common;
-using Tourism.Domain.Entities;
+using Tourism.Application.Features.Hotels.Create;
 using Tourism.Application.Interfaces;
+using Tourism.Application.IUnitofwork;
+using Tourism.Domain.Entities;
+using Tourism.Domain.Entities.Common;
 
 namespace Tourism.Application.Features.Hotels.Create
 {
@@ -47,32 +48,68 @@ namespace Tourism.Application.Features.Hotels.Create
                     galleryUrls.AddRange(uploadedGallery);
                 }
 
+                // 3. بناء الكيان مع التحقق من الـ null لكل الحقول الاختيارية
                 var entity = new Hotel
                 {
                     Id = Guid.NewGuid().ToString(),
-                    Name = new LocalizedText { En = request.Name.En, Ar = request.Name.Ar },
-                    Description = new LocalizedText { En = request.Description.En, Ar = request.Description.Ar },
+                    Name = new LocalizedText
+                    {
+                        En = request.Name?.En ?? string.Empty,
+                        Ar = request.Name?.Ar ?? string.Empty
+                    },
+
+                    // فحص Description
+                    Description = request.Description != null
+                        ? new LocalizedText
+                        {
+                            En = request.Description.En ?? string.Empty,
+                            Ar = request.Description.Ar ?? string.Empty
+                        }
+                        : null,
+
                     ImageUrl = mainImageUrl,
                     ImageGallery = galleryUrls,
                     Latitude = request.Latitude,
                     Longitude = request.Longitude,
                     Rating = request.Rating,
                     ReviewCount = request.ReviewCount,
-                    PriceRange = new LocalizedText { En = request.PriceRange.En, Ar = request.PriceRange.Ar },
-                    Amenities = request.Amenities?.Select(a => new LocalizedText { En = a.En, Ar = a.Ar }).ToList() ?? new List<LocalizedText>(),
-                    RoomTypes = request.RoomTypes?.Select(r => new LocalizedText { En = r.En, Ar = r.Ar }).ToList() ?? new List<LocalizedText>(),
-                    ContactInfo = new HotelContactInfo
-                    {
-                        Phone = request.ContactInfo.Phone,
-                        Email = request.ContactInfo.Phone,
-                        Website = request.ContactInfo.Phone
-                    },
-                    StarRating = request.StarRating
+
+                    // فحص PriceRange
+                    PriceRange = request.PriceRange != null
+                        ? new LocalizedText
+                        {
+                            En = request.PriceRange.En ?? string.Empty,
+                            Ar = request.PriceRange.Ar ?? string.Empty
+                        }
+                        : null,
+
+                    Amenities = request.Amenities?
+                        .Where(a => a != null)
+                        .Select(a => new LocalizedText { En = a.En ?? string.Empty, Ar = a.Ar ?? string.Empty })
+                        .ToList() ?? new List<LocalizedText>(),
+
+                    RoomTypes = request.RoomTypes?
+                        .Where(r => r != null)
+                        .Select(r => new LocalizedText { En = r.En ?? string.Empty, Ar = r.Ar ?? string.Empty })
+                        .ToList() ?? new List<LocalizedText>(),
+
+                    // فحص ContactInfo
+                    ContactInfo = request.ContactInfo != null
+                        ? new HotelContactInfo
+                        {
+                            Phone = request.ContactInfo.Phone,
+                            Email = request.ContactInfo.Email,
+                            Website = request.ContactInfo.Website
+                        }
+                        : null,
+
+                    StarRating = request.StarRating ?? 3
                 };
 
                 await _unitOfWork.Hotels.AddAsync(entity, cancellationToken);
                 await _unitOfWork.SaveChangesAsync(cancellationToken);
 
+                // 4. بناء كائن الـ DTO المرتد بأمان
                 var dto = new HotelDto
                 {
                     Id = entity.Id,
@@ -83,12 +120,12 @@ namespace Tourism.Application.Features.Hotels.Create
                     Latitude = entity.Latitude ?? 0,
                     Longitude = entity.Longitude ?? 0,
                     Rating = entity.Rating ?? 0,
-                    ReviewCount = entity.ReviewCount ?? 0,
+                    ReviewCount = entity.ReviewCount,
                     PriceRange = request.PriceRange,
                     Amenities = request.Amenities ?? new List<LocalizedTextDto>(),
                     RoomTypes = request.RoomTypes ?? new List<LocalizedTextDto>(),
                     ContactInfo = request.ContactInfo,
-                    StarRating = entity.StarRating ?? 0
+                    StarRating = entity.StarRating ?? 3
                 };
 
                 return new ApiResponse<HotelDto>

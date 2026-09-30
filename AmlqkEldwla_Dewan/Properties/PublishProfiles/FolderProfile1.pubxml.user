@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>E:\TourismBackendPublishes</_PublishTargetUrl>
-    <History>True|2026-09-22T07:46:33.5176750Z||;True|2026-09-22T09:43:39.0750402+03:00||;True|2026-09-22T09:23:24.3420556+03:00||;False|2026-09-22T09:21:47.5173058+03:00||;True|2026-09-17T14:22:19.9190556+03:00||;True|2026-09-16T15:26:54.5569594+03:00||;</History>
+    <History>True|2026-09-28T09:30:24.1625682Z||;True|2026-09-22T10:46:33.5176750+03:00||;True|2026-09-22T09:43:39.0750402+03:00||;True|2026-09-22T09:23:24.3420556+03:00||;False|2026-09-22T09:21:47.5173058+03:00||;True|2026-09-17T14:22:19.9190556+03:00||;True|2026-09-16T15:26:54.5569594+03:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
